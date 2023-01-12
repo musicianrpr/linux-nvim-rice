@@ -3,7 +3,7 @@ node_modules
 
 !.gitignore
 !/.config/
-/.config/**
+/.config/*
 !/.config/nvim/
 !/.config/kitty/
 !/.config/picom/
