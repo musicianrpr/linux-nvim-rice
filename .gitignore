@@ -1,0 +1,15 @@
+/*
+node_modules
+coc/extentions
+
+!.gitignore
+!/.config/
+/.config/*
+!/.config/nvim/
+!/.config/kitty/
+!/.config/picom/
+!/.config/i3/
+!/.config/polybar/
+!/.config/rofi/
+!/.zshrc
+!/.p10k.zsh
