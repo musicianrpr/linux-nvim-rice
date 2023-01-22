@@ -5,6 +5,8 @@ coc/extentions
 !.gitignore
 !/.config/
 /.config/*
+!/.config/bspwm/
+!/.config/sxhkd/
 !/.config/nvim/
 !/.config/kitty/
 !/.config/picom/

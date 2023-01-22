@@ -97,6 +97,8 @@ return require('packer').startup(function(use)
 
 	-- ################# RUST #################
 	use 'rust-lang/rust.vim'
+	-- ################# SXHKD #################
+	use 'kovetskiy/sxhkd-vim'
 
   if packer_bootstrap then
     require('packer').sync()

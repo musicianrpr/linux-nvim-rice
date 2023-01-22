@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nvim-comment"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/nvim-comment",
-    url = "https://github.com/terrortylor/nvim-comment"
-  },
   ["nvim-dap"] = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/nvim-dap",
@@ -185,6 +180,11 @@ _G.packer_plugins = {
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
+  ["sxhkd-vim"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/sxhkd-vim",
+    url = "https://github.com/kovetskiy/sxhkd-vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -199,16 +199,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-astro"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-astro",
-    url = "https://github.com/wuelnerdotexe/vim-astro"
-  },
-  ["vim-be-good"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-be-good",
-    url = "https://github.com/ThePrimeagen/vim-be-good"
   },
   ["vim-flutter"] = {
     loaded = true,

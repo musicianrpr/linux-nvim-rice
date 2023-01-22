@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Color files
-PFILE="$HOME/.config/polybar/material/colors.ini"
+PFILE="$HOME/.config/polybar/colors.ini"
 WFILE="$HOME/.cache/wal/colors.sh"
 
 # Get colors
