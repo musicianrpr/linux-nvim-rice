@@ -7,8 +7,7 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
+vim.opt.guicursor = ""
 
 -- #################### SETUPS ######################
-require("flutter-tools").setup{} -- use defaults
-require('nvim_comment').setup{}
 require('trouble').setup{}
