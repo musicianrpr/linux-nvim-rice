@@ -68,6 +68,7 @@ return require('packer').startup(function(use)
 		"folke/trouble.nvim",
 		requires = "kyazdani42/nvim-web-devicons",
 	}
+	use 'folke/lsp-colors.nvim'
 
 	-- ################# GIT SUPPORT #################
 	use 'mhinz/vim-signify'
@@ -86,19 +87,34 @@ return require('packer').startup(function(use)
 	use 'mbbill/undotree'
 
 	-- ################# GO SUPPORT #################
-	use 'ray-x/go.nvim'
-	use 'ray-x/guihua.lua' -- recommanded if need floating window support
-	use 'neovim/nvim-lspconfig'
+	use 'fatih/vim-go'
 	
 	-- ################# DEBUGGING #################
-	use 'mfussenegger/nvim-dap'
-	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-	use 'leoluz/nvim-dap-go'
+	use	"mfussenegger/nvim-dap"
+	use	"theHamsta/nvim-dap-virtual-text"
+	use	"rcarriga/nvim-dap-ui"
+	use "leoluz/nvim-dap-go"
+	use	"nvim-telescope/telescope-dap.nvim"
+	use "folke/neodev.nvim"
 
 	-- ################# RUST #################
 	use 'rust-lang/rust.vim'
+
 	-- ################# SXHKD #################
 	use 'kovetskiy/sxhkd-vim'
+
+	-- ################# FIRESTORE SECUTIRY RULES ###################
+	use 'delphinus/vim-firestore'
+
+	-- ################# LSP CONFIG ################
+	use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+
+	-- ################# AUTOCONFIGURE ################
+	use { "williamboman/mason.nvim" }
+	use 'jayp0521/mason-nvim-dap.nvim'
+
+	-- ################# VIM WHICH KEY ################
+	use 'liuchengxu/vim-which-key'
 
   if packer_bootstrap then
     require('packer').sync()

@@ -3,10 +3,10 @@
 #
 
 Print
-    scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`'
+	maim '~/screenshots/screenshot_%Y%m%d_%H%M%S.png'
 
-Shift + Print
-    scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/screenshots && mv $f ~/screenshots && xclip -selection clipboard -t image/png -i ~/screenshots/`ls -1 -t ~/screenshots | head -1`'
+alt + Print
+	maim -s | xclip -selection clipboard -t image/png -i
 
 # terminal emulator
 alt + Return

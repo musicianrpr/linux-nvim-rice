@@ -94,16 +94,6 @@ _G.packer_plugins = {
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
     url = "https://github.com/akinsho/flutter-tools.nvim"
   },
-  ["go.nvim"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/go.nvim",
-    url = "https://github.com/ray-x/go.nvim"
-  },
-  ["guihua.lua"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/guihua.lua",
-    url = "https://github.com/ray-x/guihua.lua"
-  },
   harpoon = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -114,10 +104,30 @@ _G.packer_plugins = {
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/hlargs.nvim",
     url = "https://github.com/m-demare/hlargs.nvim"
   },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["mason-nvim-dap.nvim"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/mason-nvim-dap.nvim",
+    url = "https://github.com/jayp0521/mason-nvim-dap.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
   },
   ["nvim-dap"] = {
     loaded = true,
@@ -133,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
     url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -185,6 +200,11 @@ _G.packer_plugins = {
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/sxhkd-vim",
     url = "https://github.com/kovetskiy/sxhkd-vim"
   },
+  ["telescope-dap.nvim"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
+    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -200,6 +220,11 @@ _G.packer_plugins = {
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-firestore"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-firestore",
+    url = "https://github.com/delphinus/vim-firestore"
+  },
   ["vim-flutter"] = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-flutter",
@@ -209,6 +234,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-lsc"] = {
     loaded = true,
@@ -224,6 +254,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-signify",
     url = "https://github.com/mhinz/vim-signify"
+  },
+  ["vim-which-key"] = {
+    loaded = true,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-which-key",
+    url = "https://github.com/liuchengxu/vim-which-key"
   },
   ["yuck.vim"] = {
     loaded = true,

@@ -7,7 +7,7 @@ set tabstop=2
 set shiftwidth=2
 set relativenumber
 set completeopt-=preview
-set nowrap
+"set nowrap
 set updatetime=50
 set colorcolumn="80"
 
@@ -38,6 +38,10 @@ imap kj <Esc>
 
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+
+inoremap <C-BS> <C-\><C-O>dB
 
 " tab navigation
 map <leader>h :wincmd h <CR>
