@@ -25,10 +25,7 @@ return require('packer').startup(function(use)
 	-- ################## FLUTTER PLUGINS ###################
 	use 'dart-lang/dart-vim-plugin'
 	use 'thosakwe/vim-flutter'
-	use 'natebosch/vim-lsc'
-	use 'natebosch/vim-lsc-dart'
-	use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
-
+	
 	-- ################## CODE COMPLETION ###################
 	use {'neoclide/coc.nvim', branch = 'release'}
 
@@ -49,7 +46,7 @@ return require('packer').startup(function(use)
 	}
 
 	-- ################## AUTOCLOSE BRACKETS ###################
-	use 'jiangmiao/auto-pairs'
+	-- use 'jiangmiao/auto-pairs'
 
 	-- ################## NAVIGATION ##################
 	use {
@@ -115,6 +112,9 @@ return require('packer').startup(function(use)
 
 	-- ################# VIM WHICH KEY ################
 	use 'liuchengxu/vim-which-key'
+
+	-- ################# MARKDOWN ################
+	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   if packer_bootstrap then
     require('packer').sync()

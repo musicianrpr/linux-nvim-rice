@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["auto-pairs"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -88,11 +83,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
     url = "https://github.com/dart-lang/dart-vim-plugin"
-  },
-  ["flutter-tools.nvim"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
-    url = "https://github.com/akinsho/flutter-tools.nvim"
   },
   harpoon = {
     loaded = true,
@@ -113,6 +103,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-nvim-dap.nvim"] = {
     loaded = true,
@@ -240,16 +237,6 @@ _G.packer_plugins = {
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-go",
     url = "https://github.com/fatih/vim-go"
   },
-  ["vim-lsc"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-lsc",
-    url = "https://github.com/natebosch/vim-lsc"
-  },
-  ["vim-lsc-dart"] = {
-    loaded = true,
-    path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-lsc-dart",
-    url = "https://github.com/natebosch/vim-lsc-dart"
-  },
   ["vim-signify"] = {
     loaded = true,
     path = "/home/mscnreaper/.local/share/nvim/site/pack/packer/start/vim-signify",
@@ -268,10 +255,21 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Setup for: markdown-preview.nvim
+time([[Setup for markdown-preview.nvim]], true)
+try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
+time([[Setup for markdown-preview.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
